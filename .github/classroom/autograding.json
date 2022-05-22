@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "biblioteka_2_1",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "2\r\n(\"dodaj\", \"Quo Vadis\", \"Henryk Sienkiewicz\", 2010)\r\n(\"wypozycz\", \"Jacek Malyszko\", \"Quo Vadis\")",
+      "output": "True\r\nTrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "biblioteka_2_2",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "4\r\n(\"dodaj\", \"Pan Tadeusz\", \"Adam Mickiewicz\", 2000)\r\n(\"dodaj\", \"Pan Tadeusz\", \"Adam Mickiewicz\", 2000)\r\n(\"wypozycz\", \"Jacek Małyszko\", \"Pan Tadeusz\")\r\n(\"wypozycz\", \"Jacek Małyszko\", \"Pan Tadeusz\")",
+      "output": "True\r\nTrue\r\nTrue\r\nFalse",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "biblioteka_2_3",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "10\r\n(\"dodaj\", \"Pan Tadeusz\", \"Adam Mickiewicz\", 2000)\r\n(\"dodaj\", \"Quo Vadis\", \"Henryk Sienkiewicz\", 2010)\r\n(\"dodaj\", \"Chatka Puchatka\", \"Alan Alexander Milne\", 1998)\r\n(\"dodaj\", \"Hobbit\", \"Bilbo Baggins\", 2000)\r\n(\"wypozycz\", \"Jacek Małyszko\", \"Pan Tadeusz\")\r\n(\"wypozycz\", \"Jacek Małyszko\", \"Quo Vadis\")\r\n(\"wypozycz\", \"Jacek Małyszko\", \"Chatka Puchatka\")\r\n(\"wypozycz\", \"Jacek Małyszko\", \"Hobbit\")\r\n(\"oddaj\", \"Jacek Małyszko\", \"Quo Vadis\")\r\n(\"wypozycz\", \"Jacek Małyszko\", \"Hobbit\")",
+      "output": "True\r\nTrue\r\nTrue\r\nTrue\r\nTrue\r\nTrue\r\nTrue\r\nFalse\r\nTrue\r\nTrue",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "biblioteka_2_4",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "5\r\n(\"dodaj\", \"Pan Tadeusz\", \"Adam Mickiewicz\", 2000)\r\n(\"wypozycz\", \"Bartek Czwartek\", \"Pan Tadeusz\")\r\n(\"wypozycz\", \"Jacek Malyszko\", \"Pan Tadeusz\")\r\n(\"oddaj\", \"Bartek Czwartek\", \"Pan Tadeusz\")\r\n(\"wypozycz\", \"Jacek Malyszko\", \"Pan Tadeusz\")",
+      "output": "True\r\nTrue\r\nFalse\r\nTrue\r\nTrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "biblioteka_2_5",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "3\r\n(\"wypozycz\", \"Bartek Czwartek\", \"Pan Tadeusz\")\r\n(\"dodaj\", \"Pan Tadeusz\", \"Adam Mickiewicz\", 2000)\r\n(\"wypozycz\", \"Bartek Czwartek\", \"Pan Tadeusz\")",
+      "output": "False\r\nTrue\r\nTrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "biblioteka_2_6",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "3\r\n(\"dodaj\", \"Hobbit\", \"Bilbo Baggins\", 2000)\r\n(\"oddaj\", \"Bartek Czwartek\", \"Hobbit\")\r\n(\"oddaj\", \"Bartek Czwartek\", \"Pan Tadeusz\")",
+      "output": "True\r\nFalse\r\nFalse",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "biblioteka_2_7",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "12\r\n(\"dodaj\", \"Pan Tadeusz\", \"Adam Mickiewicz\", 2000)\r\n(\"dodaj\", \"Quo Vadis\", \"Henryk Sienkiewicz\", 2010)\r\n(\"dodaj\", \"Chatka Puchatka\", \"Alan Alexander Milne\", 1998)\r\n(\"dodaj\", \"Pan Tadeusz\", \"Adam Mickiewicz\", 2000)\r\n(\"dodaj\", \"Chatka Puchatka\", \"Alan Alexander Milne\", 2014)\r\n(\"wypozycz\", \"Bartek Czwartek\", \"Pan Tadeusz\")\r\n(\"wypozycz\", \"Bartek Czwartek\", \"Pan Tadeusz\")\r\n(\"wypozycz\", \"Jacek Malyszko\", \"Quo Vadis\")\r\n(\"wypozycz\", \"Bartek Czwartek\", \"Quo Vadis\")\r\n(\"oddaj\", \"Jacek Malyszko\", \"Quo Vadis\")\r\n(\"wypozycz\", \"Bartek Czwartek\", \"Quo Vadis\")\r\n(\"oddaj\", \"Jacek Malyszko\", \"Quo Vadis\")",
+      "output": "True\r\nTrue\r\nTrue\r\nTrue\r\nTrue\r\nTrue\r\nFalse\r\nTrue\r\nFalse\r\nTrue\r\nTrue\r\nFalse",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
